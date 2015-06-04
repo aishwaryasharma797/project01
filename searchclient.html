@@ -1,0 +1,83 @@
+
+     <html>
+      <body>
+        
+        <script>
+        function ajaxfunc(){
+          //  alert("Hello - ajaxfunc() is being called here"); // 
+        
+         var ajaxReq = new XMLHttpRequest(); //1
+            
+          //  alert("httprequest generated");
+            
+          ajaxReq.onreadystatechange = function(){
+              
+              
+              
+              
+              
+   
+    //alert("entered state change function");//6  getting displayed 4 times ... that means the state is being changed 4 times but is not reaching 4 ..what about !=4 
+              
+      if(ajaxReq.readyState == 4){
+         
+          var ajaxdisplay = document.getElementById('div1');
+          ajaxdisplay.innerHTML = ajaxReq.responseText;
+    
+          
+          //alert("If readystate running"); // not running => problem area --> state is not changing n readystate - 4 means request finished and response is ready
+      }
+              
+            
+     if(http.readyState == 0){
+      //  alert("Request not initialized"); // Not running either !!    
+    }
+              
+                      
+     if(http.readyState == 1){
+       // alert("Server connection not espatblished"); // Not running either !!    
+    }
+              
+                      
+     if(http.readyState == 2){
+      //  alert("Request not recievd"); // Not running either !!    
+    }
+              
+                      
+     if(http.readyState == 3){
+      //  alert("Request not processing"); // Not running either !!    
+   
+          }
+              
+              }  
+         // alert("State not yet changed "); //2
+            
+         var name = document.getElementById('name').value; //3
+         var queryString = "?name=" + name ; //4
+            
+           // alert("reached generation of query string");
+            
+         ajaxReq.open("GET", "searchserver.php" + queryString, true); //5
+            
+           // alert("reaching out to searchserver.php");  // resuming after running in state change function
+            
+         ajaxReq.send(null);  // 7 
+            
+           // alert("after sending ajaxrequest");
+     }
+
+         </script>      
+        <head>
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:9999/phpmyadmin/project01/first.css">
+</head>
+      
+    <form id='search' method='post' accept-charset='UTF-8'>
+    <label> Search For </label> 
+    <input type="text" name="name" id="name" required>
+    <input type="button" value="Submit" id="submit2" name="submit" onclick='ajaxfunc()'>
+        </form>
+          
+    <div id="div1" name="seeresult"> See your results here! </div>     
+        
+    </body>
+</html>
