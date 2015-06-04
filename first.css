@@ -1,0 +1,133 @@
+#login{
+    border-radius: 25px;
+    border: 2px solid #FAFAFA;
+    padding: 40px; 
+    width: 250px;
+    height: 100px; 
+    position: absolute;
+    top: 225px;
+    left: 175px;
+    
+    
+}
+
+#search{
+    border-radius: 25px;
+    border: 2px solid #FAFAFA;
+    padding: 40px; 
+    width: 250px;
+    height: 20px; 
+    position: absolute;
+    top: 225px;
+    left: 175px;
+    
+    
+}
+
+#submit{
+position: absolute;
+    left: 235px;
+    top: 200px;
+    background-color: aquamarine;
+    border-radius: 25px;
+    width: 100px;
+   
+}
+#submit2{
+    background-color: aquamarine;
+    border-radius: 25px;
+    width: 100px;
+    position: absolute;
+    top: 65px;
+    left: 130px;
+   
+}
+
+#mail{
+position: absolute;
+left: 138px;
+    top: 55px;
+    
+    border-radius: 25px;
+}
+#pass{
+border-radius: 25px;
+    
+}
+
+#first{
+ border-radius: 25px;   
+}
+#last{
+border-radius: 25px;
+}
+
+#email {
+ font-size: 18; 
+ position: absolute;
+    top: 40px;
+
+ padding: 10;
+    
+    
+}
+
+
+#passlabel {
+
+ font-size: 18;    
+ padding: 10;
+    padding-bottom: 10px;
+
+    
+}
+#fname {
+
+ font-size: 18;  
+ padding: 10;
+    padding-bottom: 10px;
+    
+}
+#lname {
+
+ font-size: 18; 
+ padding: 10;
+     padding-bottom: 10px;
+  
+}
+
+#list{
+ 
+    position: absolute;
+    top: 40px;
+    left: 140px;
+    
+}
+
+#name{
+   border-radius: 25px;
+
+}
+
+#search{
+position: absolute;
+    top: 200px;
+    width: 230px;
+
+}
+
+#div1{
+position: absolute;
+    top: 320px;
+    left: 200px;
+}
+
+#register{
+font-size: 40px;
+    position: absolute;
+    top: 170px;
+    left: 230px;
+   
+    
+
+}
